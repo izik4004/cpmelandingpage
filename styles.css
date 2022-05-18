@@ -43,6 +43,11 @@ input {
    height: 44px;
 }
 
+.logo {
+   height: 50px;
+   width: 100px;
+}
+
 header {
    position: fixed;
    width: 100%;

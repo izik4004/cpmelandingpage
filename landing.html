@@ -29,7 +29,7 @@
          </div>
         
          <div class="responsive_menu">
-            <div id="open-menu-btn"><i class="fa fa-bars fa-2x"></i></div>
+           <button id="open-menu-btn"> <i class="fa fa-bars fa-2x" ></i></button>
             
             <div class="nav_button" id="close-menu-btn"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" 
             viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg></div>
@@ -84,29 +84,29 @@
 
       <!-- second section -->
       <div class="bg-style">
-         <section class="container items-section">
+         <section class="container">
             <div class="wrap-heading">
                <h3>Create daily activity with your phone, and organize it easily</h3>
             </div>
             <div class="items_wrapper">
                <div class="single-items ">
                   <img src="./img/4.png" alt="#" />
-                  <h4>invoice reminder</h4>
-                  <p>This solution helps business owners send overdue invoice reminders to customers</p>
+                  <h5>Invoice reminders</h5>
+                  <p>It makes it easier to keep track and manage debt collection</p>
                </div>
                <div class="single-items ">
-                  <img src="{{h.body_h3_logo_two}}" alt="#" />
-                  <h4>{{h.body_h3_logo_two_name}}</h4>
+                  <img src="./img/5.png" alt="#" />
+                  <h5>Debt Collection</h5>
                   <p>It makes it easier to keep track and manage debt collection</p>
                </div>
                <div class="single-items">
-                  <img src="{{h.body_h3_logo_three}}" alt="#" />
-                  <h4>{{h.body_h3_logo_three_name}}</h4>
+                  <img src="./img/3.png" alt="#" />
+                  <h5>Sales Messaging</h5>
                   <p>It makes it easier to keep track and manage debt collection</p>
                </div>
                <div class="single-items">
-                  <img src="{{h.body_h3_logo_four}}" alt="#" />
-                  <h4>{{h.body_h3_logo_four_name}}</h4>
+                  <img src="./img/2.png" alt="#" />
+                  <h5>Sales Messaging</h5>
                   <p>Provides a way for business owners to push unique sales messaging directly to their customers.</p>
                </div>
             </div>
@@ -118,7 +118,7 @@
          <div class="container started_wrapper">
             <div class="section-left">
                <h2>Create daily activity with your phone, and organize it easily</h2>
-               <p>{{h.section_three_sub_paragraph}}</p>
+               <p>Provides a way for business owners to push unique sales messaging directly to their customers.</p>
                <button class="btn">Get Started</button>
             </div>
             <div class="section-right">
@@ -131,13 +131,13 @@
       <section class=" about_container">
          <!-- <div class="about_wrapper"> -->
             <div class="about-section-left">
-               <h2>{{h.footer_h3}}</h2>
-               <p>{{h.footer_h3_paragraph}}</p>
-               <p>{{h.footer_name_employee}}</p>
-               <p>{{h.name_job_description}}</p>
+               <h2>Hear from the ambitious businesses using our solution</h2>
+               <p>“We sometimes have to sell in credit to our customers, which means we have debtors. CustomerPayMe has helped us recover a lot of debts and track how much we’re yet to recover. The platform just makes the process a lot more easier.”</p>
+               <p>Adekola Olusanya</p>
+               <p>CEO</p>
             </div>
             <div class="about-section-right">
-               <img src="./img/1.png" alt="#" />
+               <img src="./img/9.png" alt="#" />
             </div>
          <!-- </div> -->
       </section>
@@ -156,12 +156,14 @@
             <!-- sign up form -->
             <div class="form_cover">
                <form action="">
-                  <div class="container hero-form-grid">
+                  <div class="container footer-form-grid">
+                     <div class="form_row">
                      <input
                         type="text"
                         name="full-name"
                         id="full-name"
                         placeholder="Full Name"
+                        
                      />
 
                      <input
@@ -170,17 +172,19 @@
                         id="email"
                         placeholder="Your Email"
                      />
-
+                  </div>
                      <input
                         type="tel"
                         name="phone-number"
                         id="phone-number"
                         placeholder="Phone Number"
+                        class="col-span-2"
                      />
 
                      <button type="submit" value="sign up" class="btn">
                         Sign Up
                      </button>
+                     
                   </div>
                </form>
             </div>
