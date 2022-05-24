@@ -14,8 +14,8 @@
     --color-primary: #fda741;
     --color-secondary:  #333cc1;
 
-    --container-width-lg: 1240px;
-    --container-width-md: 80%;
+    --container-width-lg: 74%;
+    --container-width-md: 86%;
     --container-width-sm: 84%;
     
     --transition: all 400ms ease;
@@ -148,18 +148,18 @@ header {
     position: relative;
     top:2rem;
     overflow: hidden;
-    /* height: 70vh; */
-    margin: 5rem 0px;
+    height: 70vh;
+    /* margin: 5rem 0px; */
 }
 
 .hero-left {
-    width: 344px;
+    /* width: 344px; */
 }
 .hero_container {
     display: grid;
     grid-template-columns:  1fr 1fr;
-    /* align-items: center; */
-    /* gap: 5rem; */
+    align-items: center;
+    gap: 30px;
     height: 100%;
 }
 .hero-left h1 {
@@ -234,7 +234,8 @@ color: #00098A;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 20%;
+    text-align: center;
+    /* width: 20%; */
     /* width: 30%; */
 }
 
@@ -417,8 +418,37 @@ footer {
 
   }
 
-  h1 {
-     font-size: 2rem;
+  .hero_container {
+      /* display: grid; */
+    /* grid-template-columns: 1fr; */
+    /* text-align: center; */
+    
+}
+
+/* .hero_container {
+    display: grid;
+grid-template-columns: 1fr;
+align-items: center;
+align-content: center;
+top:30;
+gap: 10px;
+height: 100%;
+text-align: center;
+} */
+
+.hero-right img {
+    height: auto;
+    align-items: center;
+    object-fit: contain;
+}
+
+  .hero-left h1 {
+     font-size: 42px;
+     text-align: left;
+font-style: normal;
+font-weight: 700;
+/* font-size: 52px; */
+line-height: 53px;
   }
   h2 {
       font-size: 1.7rem;
@@ -484,18 +514,16 @@ footer {
 .section-left {
     padding: 0 
 }
-.items_wrapper {
+/* .items_wrapper {
     display: flex;
     flex-wrap: wrap;
-}
+} */
 .about-section-left {
     padding: 20px
     /* width:548px */
 }
 
-.hero-left {
-    width: 100%;
-}
+
 
 }
 
@@ -510,12 +538,13 @@ footer {
     }
     header {
         height: 100vh;
+        margin: 5rem 0px;
         
     }
     .hero_container {
         grid-template-columns: 1fr;
         text-align: center;
-        margin-top: 2rem;
+        /* margin-top: 2rem; */
     }
     
     .started_wrapper {
@@ -571,13 +600,13 @@ footer {
 }
 
 .items_wrapper {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* align-items: center;
+    align-content: center; */
 }
 
-.single-items {
-    flex:30%
-}
+
 
 .about-section-left {
     padding: 20px

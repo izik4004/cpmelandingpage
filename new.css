@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;1,300;1,400&family=Montserrat:ital,wght@0,400;0,500;0,600;1,300;1,400;1,500;1,600;1,800;1,900&family=Permanent+Marker&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline:0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+  
+:root {
+    --color-primary: #fda741;
+    --color-secondary:  #333cc1;
+
+    --container-width-lg: 1152px;
+    --container-width-md: 960px;
+    --container-width-sm: 600px;
+    
+    --transition: all 400ms ease;
+
+}
+
+.btn {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 0 1.2rem;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transform: var(--transition);
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    height: 44px;
+}
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+  }
+  header {
+    padding: 20px 40px;
+    background: white;
+    align-items: center;
+  }
+  header h1 {
+    grid-column: span 6;
+    padding: 10px 0px;
+  }
+  header nav {
+    grid-column: 7 / span 6;
+    justify-self: end;
+  }
+  header nav a {
+    color: #333;
+    margin-left: 10px;
+    text-decoration: none;
+  }
+  main {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 20px;
+  }
+  main img {
+    grid-column:   span 6;
+    width: 100%;
+    border-radius: 6px;
+    
+  }
+  main .hero-left {
+    grid-column: span 6;
+    margin: auto;
+  }
+
+  .hero-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:0.5rem;
+    padding: 10px 0px;
+}
+
+.hero-form-grid input {
+    border: 1px solid rgba(51, 60, 193, 0.28);
+    border-radius: 10px;
+    height: 44px;
+    padding: 10px;
+}
+
+main h1 {
+    font-weight:700;
+    font-size:52px;
+    line-height:62.87px;
+    
+color: #00098A;
+}
+
+main p {
+    font-weight:500;
+font-size:14px;
+line-height:22.79px;
+
+}
+h2 {
+    grid-column: span 12;
+   
+    padding-top: 20px;
+    font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 124.8%;
+
+/* or 40px */
+text-align: center;
+
+color: #00098A;
+padding: 10px 20px;
+
+
+  }
+
+  p {
+    padding: 10px 0px;
+  }
+  main .card {
+    grid-column: span 3;
+    background: white;
+    gap:10px;
+    text-align: center;
+  }
+
+  .card img {
+      width: 30%;
+      padding: 10px 0px;
+  }
+
+  .started_wrapper {
+    grid-template-columns: 1fr 1fr;
+   }
+
+   .section-left {
+     
+   }
+
+  
+  @media screen and (max-width: 700px) {
+    /* main h1 {
+        font-size: 30px;
+    } */
+    .grid {
+align-items: center;
+    }
+    main img {
+      grid-column: 2 / span 10;
+    }
+    main .hero-left {
+      grid-column: 2 / span 10;
+      text-align: left;
+    }
+    main .card {
+      grid-column: span 6;
+    }
+    main {
+      justify-items: center;
+    }
+    .hero-form-grid {
+        /* grid-column: 1fr; */
+        grid-template-columns: 1fr;
+    }
+    
+
+  
+
+    .section-right img {
+      width: 100%;
+      object-fit: contain;
+      order: 1;
+    }
+  }
