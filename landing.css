@@ -506,9 +506,21 @@ footer {
    .responsive_menu {
       display: inline-block;
       font-size: 1.5rem;
-      color: #fda741;
-      cursor: pointer;
+      /* color: #fda741;
+      cursor: pointer; */
       justify-content: center;
+   }
+
+   #open-menu-btn {
+       cursor: pointer;
+       color: #fda741;
+        background-color: white;
+   }
+
+   #close-menu-btn {
+    cursor: pointer;
+    color: #fda741;
+    
    }
    .sign-in-up {
       display: none;
