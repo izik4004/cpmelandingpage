@@ -90,9 +90,7 @@
                         placeholder="Business Name"
                      />
                   </div>
-               </form>
-
-               <button
+                  <button
                   type="submit"
                   value="sign up"
                   class="btn"
@@ -100,6 +98,9 @@
                >
                   Sign Up
                </button>
+               </form>
+
+              
             </div>
             <!-- right side of the hero -->
             <div class="hero-right">
@@ -257,35 +258,44 @@
          <!-- </section> -->
       </div>
 
-      <footer>
-         <section class="container footer">
-            <div class="footer-wrapper">
-               <div class="footer_heading">
-                  <h3>{{h.company_name}}</h3>
-                  <p><a href="{{h.home_link}}">{{h.home_link}}</a></p>
-               </div>
-               <div class="footer-menu-links">
-                  <h5>menu links</h5>
-                  <ul class="menu-links">
-                     <li><a href="{{h.home_link}}">home</a></li>
-                     <li><a href="{{h.about_link}}">about</a></li>
-                     <li><a href="{{h.faq_link}}">faq</a></li>
-                     <li><a href="{{h.contact_us_link}}">contact</a></li>
-                  </ul>
-               </div>
-               <div class="footer_contact">
-                  <h5>contact</h5>
-                  <p>{{h.footer_contact_address}}</p>
-                  <p>
-                     <a href="{{h.customer_care_email}}"
-                        >{{h.customer_care_email}}</a
-                     >
+      <div class="footer">
+         <div class="inner-footer">
+       
+       <!--  for company name and description -->
+           <div class="footer-items">
+            <h1>{{h.company_name}} </h1>
+            <p>{{h.home_link}}</p>
+           </div>
+       
+       <!--  for quick links  -->
+           <div class="footer-items">
+             <h3>MENU LINKS</h3>
+             <div class="border1"></div> <!--for the underline -->
+               <ul>
+                 <a href="{{h.home_link}}"><li>Home</li></a>
+                 <a href="{{h.about_link}}"><li>About</li></a>
+                 <a href="{{h.faq_link}}"><li>Faq</li></a>
+                 <a href="{{h.contact_us_link}}"><li>Contact</li></a>
+               </ul>
+           </div>
+       
+       <!--  for contact us info -->
+           <div class="footer-items">
+             <h3>CONTACT</h3>
+             <div class="border1"></div>
+               <div class="address">
+                  <p>2711 Centreville Road, Suite 400, Wilmington, New castle County, DE New castle County, Delaware, 
+                     DE 19808
                   </p>
-               </div>
-            </div>
-         </section>
-      </footer>
-
+                  
+                  <p>{{h.customer_care_email}}</p>
+               
+               </div> 
+           </div>
+         </div>
+       </div>
+         
+     
       <script type="text/javascript" src="./script.js"></script>
    </body>
 </html>
