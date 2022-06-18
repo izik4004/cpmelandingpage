@@ -22,10 +22,19 @@
    --transition: all 400ms ease;
 }
 
+
+html {
+   scroll-behavior: smooth;
+}
 body {
-   font-family: "Montserrat", sans-serif;
+   font-family: "Poppins", sans-serif;
+   scroll-behavior: smooth;
 }
 
+.style-border {
+   display: flex;
+   gap: 10px
+}
 .container {
    width: var(--container-width-lg);
    margin: 0 auto;
@@ -425,6 +434,15 @@ header {
 	background: #fda741;
 	color: #fda741;
 	background-color: #fda741;
+	border: 0px;
+}
+
+.border2 {
+	height: 3px;
+	width: 40px;
+	background: #fff;
+	color: #fff;
+	background-color: #fff;
 	border: 0px;
 }
 

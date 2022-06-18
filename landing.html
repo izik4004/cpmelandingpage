@@ -11,22 +11,22 @@
       <link rel="stylesheet" href="landing.css" />
    </head>
    <body>
-      <nav>
+      <nav id="home">
          <div class="container nav_container">
             <a><img src="./img/logo.png" alt="" class="logo" /></a>
 
             <!-- <span class="me"> -->
             <ul class="navlinks" id="navlinks">
-               <li><a href="{{h.home_link}}">home</a></li>
-               <li><a href="{{h.about_link}}">about</a></li>
-               <li><a href="{{h.faq_link}}">faq</a></li>
-               <li><a href="{{h.contact_us_link}}">contact</a></li>
+               <li><a href="#home">home</a></li>
+               <li><a href="#about">about</a></li>
+               <li><a href="#faq">faq</a></li>
+               <li><a href="#contact">contact</a></li>
             </ul>
 
             <div class="sign-in-up">
                <li class="sign-in"><a href="{{h.login_link}}">log in</a></li>
                <button class="btn">
-                  <a href="{{h.signup_link}}">Sign up</a>
+                  <a href="#signup">Sign up</a>
                </button>
             </div>
 
@@ -55,7 +55,7 @@
       </nav>
 
       <header>
-         <section class="container hero_container" id="hero-section">
+         <section class="container hero_container" id="hero-section" id="signup">
             <div class="hero-left">
                <h1>Keep track of your debtors</h1>
                <p>
@@ -63,7 +63,7 @@
                   small and medium sized businesses globally.
                </p>
                <!-- sign up form on the hero -->
-               <form action="{{h.signup_link}}">
+               <form action="{{h.signup_link}}" >
                   <div class="hero-form-grid">
                      <input
                         type="text"
@@ -180,7 +180,7 @@
       </section>
 
       <!-- fourth section -->
-      <section class="about_container">
+      <section class="about_container" id="about">
          <!-- <div class="about_wrapper"> -->
          <div class="about-section-left">
             <div class="about-section-left-item">
@@ -193,6 +193,11 @@
                </p>
                <p>Adekola Olusanya</p>
                <p>CEO</p>
+               <div class="style-border">
+                  <div class="border2"></div>
+                  <div class="border1"></div>
+                  <div class="border2"></div>
+               </div>
             </div>
          </div>
          <div class="about-section-right"></div>
@@ -258,7 +263,7 @@
          <!-- </section> -->
       </div>
 
-      <div class="footer">
+      <div class="footer" >
          <div class="inner-footer">
        
        <!--  for company name and description -->
@@ -272,15 +277,15 @@
              <h3>MENU LINKS</h3>
              <div class="border1"></div> <!--for the underline -->
                <ul>
-                 <a href="{{h.home_link}}"><li>Home</li></a>
-                 <a href="{{h.about_link}}"><li>About</li></a>
+                 <a href="#home"><li>Home</li></a>
+                 <a href="#about"><li>About</li></a>
                  <a href="{{h.faq_link}}"><li>Faq</li></a>
-                 <a href="{{h.contact_us_link}}"><li>Contact</li></a>
+                 <a href="#contact"><li>Contact</li></a>
                </ul>
            </div>
        
        <!--  for contact us info -->
-           <div class="footer-items">
+           <div class="footer-items" id="contact">
              <h3>CONTACT</h3>
              <div class="border1"></div>
                <div class="address">
