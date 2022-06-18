@@ -446,7 +446,7 @@ header {
 	border: 0px;
 }
 
-ul {
+.footer-items ul {
 	list-style: none;
 	color: #fff;
 	font-size: 14px;
@@ -454,7 +454,7 @@ ul {
   
  }
 
-ul a {
+.footer-items ul a {
 	text-decoration: none;
 	outline: none;
 	color: #fff;
@@ -462,16 +462,16 @@ ul a {
 
 }
 
-ul a:hover {
+.footer-items ul a:hover {
 	color: #fda741;
 }
 
-ul li {
+.footer-items ul li {
 	margin: 10px 0;
 	height: 25px;
 }
 
-li i {
+.footer-items li i {
 	margin-right: 20px;
 }
 .address p{
